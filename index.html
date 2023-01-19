@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.loader {
+  border: 16px solid #f3f3f3;
+  margin: auto;
+  border-radius: 50%;
+  border-top: 16px solid #ABB3B9;
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+<br>
+<h1><center>Your page is loading!</center></h1>
+<br>
+<br>
+
+<div class="loader"></div>
+<script>
+const myTimeout = setTimeout(myGreeting, 0);
+
+function myGreeting() {
+  window.location.assign("https://jbellcode.github.io."); 
+}
+
+</script>
+</body>
+</html>
